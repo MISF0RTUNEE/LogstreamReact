@@ -1,10 +1,14 @@
 let a = Math.floor(Math.random() * 100);
 let b = a;
+let c = a;
 a = (a > 10 ? a : a * 2) > 5 ? (2 * a) + 1 : (a < 3 ? 1 : 2 * (a - 2)) > 4 ? 5 : (a % 2 == 0 ? 6 : 7);
 console.log(a);
 // условие с условным (тернарным) оператором перевести в if...else И switch()
 // результат выводить в консоль, с пощью console.log()
 
+
+
+// if...else
 if (b > 10){
 
 }
@@ -35,3 +39,40 @@ else{
 }
 
 console.log(b);
+
+
+//switch
+switch(c){
+    case c > 10:
+        break;
+    default:
+        c = c * 2;
+}
+switch(c){
+    case c > 5:
+        c = (2 * c) + 1;
+        break;
+    default:
+        switch(c){
+            case c < 3:
+                c = 1;
+                break;
+            default:
+                c = 2 * (c - 2);
+        }
+        switch(c){
+            case c > 4:
+                c = 5;
+                break;
+            default:
+                switch(c){
+                    case c % 2 == 0:
+                        c = 6;
+                        break;
+                    default:
+                        c = 7;
+                }
+        }
+}
+
+console.log(c);
