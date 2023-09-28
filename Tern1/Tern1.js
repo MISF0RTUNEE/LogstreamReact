@@ -10,14 +10,15 @@ console.log(a);
 
 
 // if...else
-if (b > 10){
 
-}
-else{
-    b = b * 2;
-}
 if(b > 5){
     b = (2 * b) + 1;
+    if (b > 10){
+
+    }
+    else{
+        b = b * 2;
+    }
 }
 else{
     if(b < 3){
@@ -43,15 +44,16 @@ console.log(b);
 
 
 //switch
-switch(true){
-    case c > 10:
-        break;
-    default:
-        c = c * 2;
-}
+
 switch(true){
     case c > 5:
         c = (2 * c) + 1;
+        switch(true){
+            case c > 10:
+                break;
+            default:
+                c = c * 2;
+        }
         break;
     default:
         switch(true){
