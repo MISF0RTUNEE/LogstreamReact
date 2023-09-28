@@ -13,10 +13,7 @@ console.log("Тернарный оператор: " + a);
 
 if(b > 5){
     b = (2 * b) + 1;
-    if (b > 10){
-
-    }
-    else{
+    if (b <= 10){
         b = b * 2;
     }
 }
@@ -49,10 +46,9 @@ switch(true){
     case c > 5:
         c = (2 * c) + 1;
         switch(true){
-            case c > 10:
-                break;
-            default:
+            case c <= 10:
                 c = c * 2;
+                break;
         }
         break;
     default:       
