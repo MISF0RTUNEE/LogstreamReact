@@ -1,5 +1,5 @@
 .buttons{
-    margin: 50px;
+    margin-left: 50px;
     height: 200px;
     width: 200px;
 }
@@ -7,5 +7,12 @@
 .btn{
     height: 45px;
     width: 45px;
+}
+
+.input{
+    margin-bottom: 5px;
+    margin-left: 50px;
+    height: 45px;
+    width: 185px;
 }
 
