@@ -15,4 +15,12 @@ document.querySelector('.buttons').onclick = (event) =>{
         document.querySelector('.input').value += "=" + eval(document.querySelector('.input').value)
         decided = true;
     }
+
+    if(event.target.className == "btn clearAll"){
+        document.querySelector('.input').value = "";
+    }
+
+    if(event.target.className == "btn clearEl"){
+        document.querySelector('.input').value = document.querySelector('.input').value.slice(0,-1);
+    }
 }
