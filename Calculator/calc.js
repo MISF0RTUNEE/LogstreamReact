@@ -14,6 +14,9 @@ document.querySelector('.buttons').onclick = (event) =>{
     if(event.target.className == "btn equals"){
         document.querySelector('.input').value += "=" + eval(document.querySelector('.input').value)
         decided = true;
+        let p = document.createElement("p");
+        p = document.querySelector('.input').value
+        document.querySelector('.history').append(p);
     }
 
     if(event.target.className == "btn clearAll"){
