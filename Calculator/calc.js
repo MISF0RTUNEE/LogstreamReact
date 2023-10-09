@@ -15,7 +15,7 @@ document.querySelector('.buttons').onclick = (event) =>{
         document.querySelector('.input').value += "=" + eval(document.querySelector('.input').value)
         decided = true;
         let p = document.createElement("p");
-        p = document.querySelector('.input').value
+        p.textContent = document.querySelector('.input').value
         document.querySelector('.history').append(p);
     }
 

@@ -1,7 +1,10 @@
+
+
 .buttons{
     margin-left: 50px;
     height: 250px;
     width: 200px;
+
 }
 
 .btn{
@@ -17,10 +20,20 @@
 }
 
 .history{
-    position: relative;
     border: 1px solid black;
     width: 300px;
+
+}
+
+.ClearHis{
+    height: 50px;
+    width: 300px;
+}
+
+.His{
+    position: absolute;
+    width: 310px;
     left: 300px;
-    top: -300px;
+    top: 9px;
 }
 
