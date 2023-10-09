@@ -26,6 +26,8 @@ document.querySelector('.buttons').onclick = (event) =>{
         document.querySelector('.input').value = document.querySelector('.input').value.slice(0,-1);
     }
 }
+
+
 const keys = ['1', '2', '3', '4', '5','6', '7', '8', '9', '0', '(', ')', '+', '-','*','/','.']
 document.addEventListener('keydown', (event) => {
     const key = event.key;
@@ -43,4 +45,11 @@ document.addEventListener('keydown', (event) => {
         p.textContent = document.querySelector('.input').value
         document.querySelector('.history').append(p);
     }
+    if(key == "Backspace"){
+        document.querySelector('.input').value = document.querySelector('.input').value.slice(0,-1);
+    }
 })
+
+document.querySelector('.ClearHis').onclick = (event) => {
+    document.querySelector('.history').innerHTML = '<p>History:</p>';
+}
