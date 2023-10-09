@@ -8,6 +8,10 @@
 }
 
 .btn{
+    background-color: #F1F3F4;
+    border: none;
+    margin-top: 3px;
+    font-size: 20px;
     height: 45px;
     width: 45px;
 }
@@ -29,6 +33,10 @@
     height: 50px;
     width: 300px;
     margin-top: 5px;
+    color:white;
+    background-color: #4285F4;
+    font-size: 20px;
+    border: none;
 }
 
 .His{
@@ -36,5 +44,14 @@
     width: 310px;
     left: 300px;
     top: 9px;
+}
+
+.equals{
+    color:white;
+    background-color: #4285F4;
+}
+
+.clearAll, .clearEl{
+    background-color: #DADCE0;
 }
 
