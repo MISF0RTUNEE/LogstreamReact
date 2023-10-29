@@ -1,5 +1,6 @@
 let a = Math.floor(Math.random() * 100);
 console.log("Начальное значение: " + a);
+a=5;
 let b = a;
 let c = a;
 a = (a > 10 ? a : a * 2) > 5 ? (2 * a) + 1 : (a < 3 ? 1 : 2 * (a - 2)) > 4 ? 5 : (a % 2 == 0 ? 6 : 7);
